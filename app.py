@@ -1,16 +1,24 @@
-import os
+import config
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+app.config.from_object(config.Config())
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
+from models import interests
 
-@app.route("/")
+
+@app.route('/')
 def hello():
     return "Hello World!"
 
 
-if __name__ == "__main__":
+@app.route('/<name>')
+def hello_name(name):
+    return "Hello {}!".format(name)
+
+
+if __name__ == '__main__':
     app.run()

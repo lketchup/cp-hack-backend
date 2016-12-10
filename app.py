@@ -48,12 +48,8 @@ def groups(token, index, size):
 @app.route('/groups/<string:token>/<int:id>/<int:index>/<int:size>/', methods=['GET', 'PUT'])
 def group(token, id, index, size):
     if request.method == 'GET':
-        return jsonify({
-            'id': id,
-            'name': 'Ramzi\'s',
-            'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
-            'hero_url': 'http://flask.pocoo.org/docs/0.11/_images/debugger.png',
-            'profiles': [
+        return jsonify(
+            [
                 {
                     'id': 1,
                     'name': 'Ramzi',
@@ -65,7 +61,7 @@ def group(token, id, index, size):
                     'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
                 },
             ]
-        })
+        )
     elif request.method == 'PUT':
         return jsonify(dict({'id': id}, **request.get_json()))
 

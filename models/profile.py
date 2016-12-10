@@ -2,16 +2,18 @@ from app import db
 from sqlalchemy.dialects.postgresql import JSON
 
 
-class Interest(db.Model):
-    __tablename__ = "interests"
+class Profile(db.Model):
+    __tablename__ = "profiles"
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String())
-    result_all = db.Column(JSON)
-    result_no_stop_words = db.Column(JSON)
+    phone = db.Column(db.String())
+    interests = db.Column(JSON)
 
-    def __init__(self, name):
+    def __init__(self, name, phone, interests):
         self.name = name
+        self.phone = phone
+        self.interests = interests
 
     def __repr__(self):
         return "<id {}>".format(self.id)

@@ -74,7 +74,7 @@ def profiles(token):
     return jsonify(request.get_json())
 
 @app.route('/profiles/<string:token>/<int:id>/', methods=['GET', 'POST'])
-def profile(token, id, index, size):
+def profile(token, id):
     if request.method == 'GET':
         return jsonify({
             'id': id,

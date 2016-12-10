@@ -1,4 +1,5 @@
 import config
+import os
 from routes.groups import GroupsEndpoint, GroupsIdEndpoint
 from routes.interests import InterestsEndpoint
 from flask import Flask
@@ -17,4 +18,5 @@ api.add_resource(GroupsIdEndpoint, "/groups/<int:group_id>")
 api.add_resource(InterestsEndpoint, "/interests")
 
 if __name__ == "__main__":
-    app.run()
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)

@@ -45,23 +45,32 @@ def groups(token, index, size):
     elif request.method == 'POST':
         return jsonify(request.get_json())
 
-@app.route('/groups/<string:token>/<int:id>/<int:index>/<int:size>/', methods=['GET', 'PUT'])
+@app.route('/groups/<string:token>/<int:id>/<int:index>/<int:size>/', methods=['GET'])
+def group(token, id, index, size):
+    return jsonify(
+        [
+            {
+                'id': 1,
+                'name': 'Ramzi',
+                'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
+            },
+            {
+                'id': 2,
+                'name': 'Pat',
+                'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
+            },
+        ]
+    )
+
+@app.route('/groups/<string:token>/<int:id>/', methods=['GET', 'PUT'])
 def group(token, id, index, size):
     if request.method == 'GET':
-        return jsonify(
-            [
-                {
-                    'id': 1,
-                    'name': 'Ramzi',
-                    'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
-                },
-                {
-                    'id': 2,
-                    'name': 'Pat',
-                    'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
-                },
-            ]
-        )
+        return jsonify({
+            'id': id,
+            'name': 'Ramzi\'s',
+            'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
+            'hero_url': 'http://flask.pocoo.org/docs/0.11/_images/debugger.png',
+        })
     elif request.method == 'PUT':
         return jsonify(dict({'id': id}, **request.get_json()))
 

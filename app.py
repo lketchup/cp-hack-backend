@@ -51,12 +51,14 @@ def group_profiles(token, id, index, size):
         [
             {
                 'id': 1,
-                'name': 'Ramzi',
+                'first_name': 'Ramzi',
+                'last_name': 'Mohawk',
                 'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
             },
             {
                 'id': 2,
-                'name': 'Pat',
+                'first_name': 'Pat',
+                'last_name': 'NoMohawk',
                 'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
             },
         ]

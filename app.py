@@ -85,7 +85,8 @@ def profile(token, id):
     if request.method == 'GET':
         return jsonify({
             'id': id,
-            'name': 'Ramzi',
+            'first_name': 'Ramzi',
+            'last_name': 'Mohawk',
             'avatar_url': 'https://avatars1.githubusercontent.com/u/9994172?v=3&s=40',
             'hero_url': 'http://flask.pocoo.org/docs/0.11/_images/debugger.png',
             'email': 'ramzi',

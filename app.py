@@ -20,7 +20,7 @@ def groups(token, index, size):
             {
                 'id': 2,
                 'name': 'Ramzi\'s',
-                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-0/p206x206/11350415_1440268869608793_9140529562314918683_n.jpg?oh=d7f1ace6794f0654abf62d608508c134&oe=58B9C840,
+                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-0/p206x206/11350415_1440268869608793_9140529562314918683_n.jpg?oh=d7f1ace6794f0654abf62d608508c134&oe=58B9C840',
                 'hero_url': 'http://www.getawayresort.com.au/wp-content/uploads/2012/06/bg_beach4.jpg?x74530',
             },
         ])
@@ -47,7 +47,7 @@ def group_profiles(token, id, index, size):
                 'id': 3,
                 'first_name': 'Lachlan',
                 'last_name': 'Parker',
-                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-9/15799_10151377632902658_310185242_n.jpg?oh=00ad321714269bfce8a699afdf656faf&oe=58F9914D,
+                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-9/15799_10151377632902658_310185242_n.jpg?oh=00ad321714269bfce8a699afdf656faf&oe=58F9914D',
             },
             {
                 'id': 4,
@@ -117,7 +117,7 @@ def products(token, profile_id, index, count):
                 'url': 'http://www.myer.com.au/shop/mystore/giftorium-stocking-fillers/ridleys-344815300-344818720--1',
                 'img_url': 'http://www.myer.com.au/wcsstore/MyerCatalogAssetStore/images/65/652/5233/141/8/344815300_344818720/344815300/344815300_zm_1.jpg',
                 'price': 99.95,
-                'description': 'This Texas Hold\'em Poker Set includes poker chips, dealer button, two card decks and instructions. Beautifully giftboxed in graphic Games room packaging.\n    Contents:\n    200 x poker chips\n    1 x dealer button\n    2 x decks of 52 cards\n    Instructions',
+                'description': 'This Texas Hold\'em Poker Set includes poker chips, dealer button, two card decks and instructions. Beautifully giftboxed in graphic Games room packaging.\nContents:\n200 x poker chips\n1 x dealer button\n2 x decks of 52 cards\nInstructions',
                 'owner': {
                     'name': 'Myer',
                     'logo_url': 'http://myersupplier.myer.com.au/images/myer_logo_large.jpg',
@@ -141,7 +141,7 @@ def products(token, profile_id, index, count):
                 'url': 'http://www.officeworks.com.au/shop/officeworks/p/kindle-paperwhite-ereader-black-amkindpapw',
                 'img_url': 'http://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/AMKINDPAPW_.jpg',
                 'price': 169.99,
-                'description': 'This Kindle Paperwhite eReader is perfect for anyone who takes their reading on the go. It features an inbuilt, adjustable light that ensures the screen looks like real paper in any environment.\n    This Kindle has a 300 ppi display which ensures that it feels like you are reading from real paper.\n    The Kindle is anti-glare so you can take your reading out into the sunlight.\n    The inbuilt, adjustable light will let you find the right brightness depending on the time of day.\n    This Kindle has access to over a million books and can download another book in under 60 seconds.\n    This is a 3rd generation Kindle.\n    It has a long battery life that can last up to 2 weeks off 1 charge.\n    It comes with a 12 month manufacturer\'s warranty.\n    The eReader is a stylish black colour.',
+                'description': 'This Kindle Paperwhite eReader is perfect for anyone who takes their reading on the go. It features an inbuilt, adjustable light that ensures the screen looks like real paper in any environment.',
                 'owner': {
                     'name': 'officeworks',
                     'logo_url': 'https://lh3.googleusercontent.com/-WvD-PEnLv3A/UpK1QmFkbTI/AAAAAAAAAJk/7PWYnBX-fbo/s299-no/youtube_profile.png',
@@ -153,7 +153,7 @@ def products(token, profile_id, index, count):
                 'url': 'http://www.officeworks.com.au/shop/officeworks/p/kindle-oasis-ereader-black-amkinoasis',
                 'img_url': '',
                 'price': 449.99,
-                'description': 'The Kindle Oasis eReader has a super thin and light design, making it incredibly comfortable to hold while reading. This Kindle has a long lasting battery, easy to use page turning buttons and a built in light, making it perfect for taking on the go.\n This Kindle has a 300 ppi display, which makes it feel like you are reading from paper.',
+                'description': 'The Kindle Oasis eReader has a super thin and light design, making it incredibly comfortable to hold while reading. This Kindle has a long lasting battery, easy to use page turning buttons and a built in light, making it perfect for taking on the go.',
                 'owner': {
                     'name': 'officeworks',
                     'logo_url': 'https://lh3.googleusercontent.com/-WvD-PEnLv3A/UpK1QmFkbTI/AAAAAAAAAJk/7PWYnBX-fbo/s299-no/youtube_profile.png',

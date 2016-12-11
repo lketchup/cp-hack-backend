@@ -20,7 +20,7 @@ def groups(token, index, size):
             {
                 'id': 2,
                 'name': 'Ramzi\'s',
-                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-0/p206x206/11350415_1440268869608793_9140529562314918683_n.jpg?oh=d7f1ace6794f0654abf62d608508c134&oe=58B9C840,
+                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-0/p206x206/11350415_1440268869608793_9140529562314918683_n.jpg?oh=d7f1ace6794f0654abf62d608508c134&oe=58B9C840',
                 'hero_url': 'http://www.getawayresort.com.au/wp-content/uploads/2012/06/bg_beach4.jpg?x74530',
             },
         ])
@@ -47,7 +47,7 @@ def group_profiles(token, id, index, size):
                 'id': 3,
                 'first_name': 'Lachlan',
                 'last_name': 'Parker',
-                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-9/15799_10151377632902658_310185242_n.jpg?oh=00ad321714269bfce8a699afdf656faf&oe=58F9914D,
+                'avatar_url': 'https://scontent.xx.fbcdn.net/v/t1.0-9/15799_10151377632902658_310185242_n.jpg?oh=00ad321714269bfce8a699afdf656faf&oe=58F9914D',
             },
             {
                 'id': 4,

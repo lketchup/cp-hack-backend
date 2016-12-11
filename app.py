@@ -46,7 +46,7 @@ def groups(token, index, size):
         return jsonify(request.get_json())
 
 @app.route('/groups/<string:token>/<int:id>/<int:index>/<int:size>/', methods=['GET'])
-def group(token, id, index, size):
+def group_profiles(token, id, index, size):
     return jsonify(
         [
             {
@@ -63,7 +63,7 @@ def group(token, id, index, size):
     )
 
 @app.route('/groups/<string:token>/<int:id>/', methods=['GET', 'PUT'])
-def group(token, id, index, size):
+def group(token, id):
     if request.method == 'GET':
         return jsonify({
             'id': id,
